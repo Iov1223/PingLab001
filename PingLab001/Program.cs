@@ -90,7 +90,12 @@ namespace Lab001
                         count++;
                     }
                 }
+                if (count == 0)
+                {
+                    count = 1;
+                }
                 string[] mass = new string[count];
+                mass[0] = " Аргументы командной строки содержат только числа";
                 int key = 0;
                 for (int i = 0; i < mass.Length; i++)
                 {
